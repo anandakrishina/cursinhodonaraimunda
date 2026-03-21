@@ -198,10 +198,8 @@ textarea {
 
 .hero-band {
   padding: 3rem 0 4rem;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.04), transparent 40%),
-    #2b2421;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: linear-gradient(90deg, rgba(68, 27, 3, 0.827) 60%, rgba(125, 68, 3, 0.849) 100%);
+  border-bottom: 1px solid rgba(99, 52, 2, 0.06);
 }
 
 .hero-grid {
@@ -280,12 +278,22 @@ textarea {
   background: #f8f3ec;
   box-shadow: var(--shadow);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
 }
 
 .hero-photo-card svg {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 16px;
+}
+
+.hero-photo-card img {
+  display: block;
+  width: 100%;
+  height: clamp(250px, 38vw, 420px);
+  object-fit: cover;
+  object-position: center;
   border-radius: 16px;
 }
 
