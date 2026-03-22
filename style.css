@@ -129,6 +129,11 @@ textarea {
   color: #3b2800;
 }
 
+.button-green {
+  background: var(--green);
+  color: #fff;
+}
+
 .button-outline {
   border-color: rgba(255, 253, 248, 0.75);
   color: #fffdf8;
@@ -620,15 +625,21 @@ textarea {
 }
 
 .impact-art {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  max-height: 420px;
   padding: 0;
   overflow: hidden;
   border-radius: var(--radius-xl);
 }
 
-.impact-art svg {
+.impact-art svg,
+.impact-art img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .impact-copy h2,
@@ -724,6 +735,12 @@ textarea {
 .step-green {
   border: 2px solid #0ea5e9;
   color: #0ea5e9;
+}
+
+.steps-cta {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .testimonials-grid {
@@ -1322,6 +1339,11 @@ textarea {
   .form-row,
   .contact-meta {
     grid-template-columns: 1fr;
+  }
+
+  .impact-art {
+    aspect-ratio: 4 / 3;
+    max-height: none;
   }
 
   .partners-group {
