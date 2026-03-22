@@ -528,7 +528,8 @@ textarea {
 }
 
 .cards-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(240px, 320px));
+  justify-content: center;
 }
 
 .info-card,
@@ -544,6 +545,7 @@ textarea {
 .info-card {
   padding: 1.4rem;
   border-radius: var(--radius-lg);
+  text-align: center;
 }
 
 .info-card h3,
@@ -570,12 +572,19 @@ textarea {
 .card-icon {
   display: inline-grid;
   place-items: center;
-  width: 34px;
-  height: 34px;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-  font-size: 0.9rem;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1rem;
+  border-radius: 14px;
+  font-size: 1.65rem;
   font-weight: 800;
+}
+
+.card-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
 }
 
 .icon-blue {
