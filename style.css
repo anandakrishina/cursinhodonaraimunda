@@ -202,9 +202,32 @@ textarea {
 }
 
 .hero-band {
+  position: relative;
+  overflow: hidden;
   padding: 3rem 0 4rem;
   background: linear-gradient(90deg, rgba(15, 42, 90, 0.92) 40%, rgba(30, 64, 175, 0.72) 100%);
   border-bottom: 1px solid rgba(96, 165, 250, 0.22);
+}
+
+.hero-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.12), transparent 42%),
+    radial-gradient(circle at 82% 75%, rgba(0, 0, 0, 0.16), transparent 48%),
+    repeating-linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.08) 0 2px,
+      rgba(255, 255, 255, 0) 2px 12px
+    );
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.hero-band > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-grid {
