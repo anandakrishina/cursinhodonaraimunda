@@ -790,6 +790,38 @@ textarea {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.instagram-section {
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.08), rgba(37, 99, 235, 0.03));
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.instagram-card {
+  background: var(--surface);
+  border: 1px solid rgba(29, 78, 216, 0.12);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.instagram-card iframe {
+  display: block;
+  width: 100%;
+  min-height: 420px;
+  border: 0;
+}
+
+.instagram-cta {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+}
+
 .testimonial-card {
   padding: 1.5rem;
   border-radius: var(--radius-lg);
@@ -1405,6 +1437,7 @@ textarea {
 
   .cards-grid,
   .steps-line,
+  .instagram-grid,
   .testimonials-grid,
   .about-numbers-grid,
   .about-values-inline,
@@ -1442,6 +1475,7 @@ textarea {
 
   .cards-grid,
   .steps-line,
+  .instagram-grid,
   .testimonials-grid,
   .about-numbers-grid,
   .about-values-inline,
