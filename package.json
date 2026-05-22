@@ -1,0 +1,8 @@
+{
+  "name": "cursinhodonaraimunda-site",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "update-instagram-embeds": "node scripts/update-instagram-embeds.mjs"
+  }
+}
